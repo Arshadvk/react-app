@@ -10,10 +10,6 @@ const adminPersistConfig = { key: 'Admin', storage, version: 1 };
 const userPersistReducer = persistReducer(persistConfig,ClientAuth.reducer);
 const adminPersistReducer = persistReducer(adminPersistConfig, AdminAuth.reducer);
 
-
-
-
-
 export const Store = configureStore({
     reducer: {
         Client: userPersistReducer,
